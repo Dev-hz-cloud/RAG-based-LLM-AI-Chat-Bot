@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What evidence links continental fragmentation to global marine biodiversity?",
+    "expected_sources": ["01_plate_tectonic_marine_diversity.pdf"]
+  },
+  {
+    "id": 2,
+    "question": "How did the breakup of Pangaea contribute to vicariance-driven speciation?",
+    "expected_sources": ["02_global_biogeography_pangaea.pdf"]
+  },
+  {
+    "id": 3,
+    "question": "How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?",
+    "expected_sources": ["03_pangaea_terrestrial_biodiversity.pdf"]
+  },
+  {
+    "id": 4,
+    "question": "How does the supercontinent cycle influence Earth's long-term climate?",
+    "expected_sources": ["04_supercontinent_cycle_climate.pdf"]
+  },
+  {
+    "id": 5,
+    "question": "What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?",
+    "expected_sources": ["05_cambrian_geography_climate.pdf"]
+  },
+  {
+    "id": 6,
+    "question": "How do landscape dynamics influence biodiversity during the Phanerozoic?",
+    "expected_sources": ["06_phanerozoic_landscape_biosphere.pdf"]
+  },
+  {
+    "id": 7,
+    "question": "Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?",
+    "expected_sources": ["07_tropical_forest_biodiversity.pdf"]
+  },
+  {
+    "id": 8,
+    "question": "What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?",
+    "expected_sources": ["08_zealandia_terrestrial_fauna.pdf"]
+  },
+  {
+    "id": 9,
+    "question": "What mechanisms can connect continental fragmentation with increased marine biodiversity?",
+    "expected_sources": ["01_plate_tectonic_marine_diversity.pdf"]
+  },
+  {
+    "id": 10,
+    "question": "How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?",
+    "expected_sources": ["02_global_biogeography_pangaea.pdf"]
+  }
+]

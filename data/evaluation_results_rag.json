@@ -1,0 +1,312 @@
+[
+  {
+    "id": 1,
+    "question": "What evidence links continental fragmentation to global marine biodiversity?",
+    "expected_sources": [
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_sources": [
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 1,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      }
+    ],
+    "answer": "The retrieved papers provide two key lines of evidence that continental fragmentation is linked to global marine biodiversity:\n\n1. **Positive correlation** – An independently derived quantitative index of continental fragmentation shows a statistically significant positive correlation with global marine invertebrate genus richness throughout the Phanerozoic (Passage 2).  \n2. **Temporal relationship** – When the biodiversity time series is lagged relative to the fragmentation index by tens of millions of years, genus richness remains correlated with fragmentation, indicating that changes in continental configuration precede and likely influence biodiversity patterns (Passage 1).\n\nThese observations support the hypothesis that tectonic processes that break up or assemble continents influence global marine species richness, beyond simple sampling bias or changes in available rock volume.",
+    "source_hit": true
+  },
+  {
+    "id": 2,
+    "question": "How did the breakup of Pangaea contribute to vicariance-driven speciation?",
+    "expected_sources": [
+      "02_global_biogeography_pangaea.pdf"
+    ],
+    "retrieved_sources": [
+      "07_tropical_forest_biodiversity.pdf",
+      "02_global_biogeography_pangaea.pdf",
+      "07_tropical_forest_biodiversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "07_tropical_forest_biodiversity.pdf",
+        "page": 2,
+        "title": "Tropical forest biodiversity"
+      },
+      {
+        "source": "02_global_biogeography_pangaea.pdf",
+        "page": 2,
+        "title": "Global biogeography of terrestrial vertebrates after Pangaea"
+      },
+      {
+        "source": "07_tropical_forest_biodiversity.pdf",
+        "page": 6,
+        "title": "Tropical forest biodiversity"
+      }
+    ],
+    "answer": "The breakup of Pangaea divided the geographic ranges of thousands of species, creating physical barriers that separated populations onto different continents. This geographic isolation (vicariance) led to the divergence of sister taxa that are now endemic to separate continents, demonstrating that continental drift was a key driver of vicariance‑driven speciation. [2]",
+    "source_hit": true
+  },
+  {
+    "id": 3,
+    "question": "How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?",
+    "expected_sources": [
+      "03_pangaea_terrestrial_biodiversity.pdf"
+    ],
+    "retrieved_sources": [
+      "03_pangaea_terrestrial_biodiversity.pdf",
+      "03_pangaea_terrestrial_biodiversity.pdf",
+      "03_pangaea_terrestrial_biodiversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "03_pangaea_terrestrial_biodiversity.pdf",
+        "page": 1,
+        "title": "Pangaea fragmentation and terrestrial biodiversity"
+      },
+      {
+        "source": "03_pangaea_terrestrial_biodiversity.pdf",
+        "page": 1,
+        "title": "Pangaea fragmentation and terrestrial biodiversity"
+      },
+      {
+        "source": "03_pangaea_terrestrial_biodiversity.pdf",
+        "page": 1,
+        "title": "Pangaea fragmentation and terrestrial biodiversity"
+      }
+    ],
+    "answer": "Terrestrial vertebrate biodiversity was expected to **nearly double** during the Mesozoic as Pangaea fragmented, even though the total terrestrial area decreased by about 24 % [1].",
+    "source_hit": true
+  },
+  {
+    "id": 4,
+    "question": "How does the supercontinent cycle influence Earth's long-term climate?",
+    "expected_sources": [
+      "04_supercontinent_cycle_climate.pdf"
+    ],
+    "retrieved_sources": [
+      "04_supercontinent_cycle_climate.pdf",
+      "04_supercontinent_cycle_climate.pdf",
+      "04_supercontinent_cycle_climate.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "04_supercontinent_cycle_climate.pdf",
+        "page": 1,
+        "title": "Supercontinent cycle and long-term climate"
+      },
+      {
+        "source": "04_supercontinent_cycle_climate.pdf",
+        "page": 6,
+        "title": "Supercontinent cycle and long-term climate"
+      },
+      {
+        "source": "04_supercontinent_cycle_climate.pdf",
+        "page": 11,
+        "title": "Supercontinent cycle and long-term climate"
+      }
+    ],
+    "answer": "The supercontinent cycle shapes Earth’s long‑term climate mainly by altering continental configuration, sea level, and the frequency of large igneous province (LIP) volcanism. When continents are assembled into a single landmass, continental weathering is enhanced and sea level falls, which can draw down atmospheric CO₂ and favor cooler, glaciated conditions. During breakup, new ocean basins form, sea level rises, and the distribution of land and water shifts, leading to humidification of the tropics and changes in tropical circulation that can warm the equatorial ocean and modify regional temperatures. Additionally, the cycle’s association with LIP events can abruptly inject large amounts of volcanic CO₂ into the atmosphere or, conversely, trigger intense chemical weathering of equatorial flood basalts that removes CO₂, thereby producing rapid climate swings. Thus, the supercontinent cycle influences long‑term climate through its control of sea level, continental geometry, and episodic volcanic activity.  \n\n[1]  \n[2]",
+    "source_hit": true
+  },
+  {
+    "id": 5,
+    "question": "What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?",
+    "expected_sources": [
+      "05_cambrian_geography_climate.pdf"
+    ],
+    "retrieved_sources": [
+      "05_cambrian_geography_climate.pdf",
+      "05_cambrian_geography_climate.pdf",
+      "05_cambrian_geography_climate.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "05_cambrian_geography_climate.pdf",
+        "page": 8,
+        "title": "Palaeogeographic configuration and early Cambrian climate"
+      },
+      {
+        "source": "05_cambrian_geography_climate.pdf",
+        "page": 1,
+        "title": "Palaeogeographic configuration and early Cambrian climate"
+      },
+      {
+        "source": "05_cambrian_geography_climate.pdf",
+        "page": 1,
+        "title": "Palaeogeographic configuration and early Cambrian climate"
+      }
+    ],
+    "answer": "The Antarctocentric palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate. [3]",
+    "source_hit": true
+  },
+  {
+    "id": 6,
+    "question": "How do landscape dynamics influence biodiversity during the Phanerozoic?",
+    "expected_sources": [
+      "06_phanerozoic_landscape_biosphere.pdf"
+    ],
+    "retrieved_sources": [
+      "06_phanerozoic_landscape_biosphere.pdf",
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "06_phanerozoic_landscape_biosphere.pdf",
+        "page": 1,
+        "title": "Phanerozoic landscape and biosphere"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      }
+    ],
+    "answer": "Landscape dynamics, driven mainly by plate tectonics and climate, have shaped Phanerozoic biodiversity by altering geographic connectivity and habitat availability. Changes in continental fragmentation and coalescence regimes influenced the long‑term diversification of marine animals and land plants, with periods of high connectivity promoting higher diversity and periods of isolation or mass extinctions reducing diversity. These tectonic processes therefore act as a fundamental driver of global biodiversity patterns through the eon. [1] [2]",
+    "source_hit": true
+  },
+  {
+    "id": 7,
+    "question": "Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?",
+    "expected_sources": [
+      "07_tropical_forest_biodiversity.pdf"
+    ],
+    "retrieved_sources": [
+      "07_tropical_forest_biodiversity.pdf",
+      "07_tropical_forest_biodiversity.pdf",
+      "07_tropical_forest_biodiversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "07_tropical_forest_biodiversity.pdf",
+        "page": 1,
+        "title": "Tropical forest biodiversity"
+      },
+      {
+        "source": "07_tropical_forest_biodiversity.pdf",
+        "page": 3,
+        "title": "Tropical forest biodiversity"
+      },
+      {
+        "source": "07_tropical_forest_biodiversity.pdf",
+        "page": 5,
+        "title": "Tropical forest biodiversity"
+      }
+    ],
+    "answer": "Tropical moist forests display distinct biodiversity patterns across the Neotropics, Afrotropics, and Indomalaya because the balance of speciation, extinction, and geographic area differs among these regions.  \n\n- **Afrotropics** show the lowest regional (γ‑diversity) and local (α‑diversity) diversity.  This is attributed to **lower speciation rates and higher extinction rates** compared with the other two regions, which together reduce net species accumulation [3].  The Afrotropics also occupy the **smallest geographic area** of the three regions and are limited by the Sahara and surrounding arid zones, a condition that has historically increased extinction through range contraction and limited opportunities for speciation (the “aridification” hypothesis) [3].  \n\n- **Indomalaya** exhibits the **highest speciation and extinction rates**, leading to a high overall species turnover.  This higher turnover has allowed the region to reach high diversity through a different evolutionary pathway than the Neotropics, where speciation and extinction rates are lower [3].  \n\n- **Neotropics** possess the greatest overall species diversity, reflecting a combination of high speciation rates and comparatively lower extinction, and are supported by a larger, more contiguous moist‑forest area than the Afrotropics [1].\n\nThus, the divergent patterns result from the interplay of regional speciation and extinction dynamics, coupled with differences in geographic extent and historical aridification.",
+    "source_hit": true
+  },
+  {
+    "id": 8,
+    "question": "What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?",
+    "expected_sources": [
+      "08_zealandia_terrestrial_fauna.pdf"
+    ],
+    "retrieved_sources": [
+      "08_zealandia_terrestrial_fauna.pdf",
+      "08_zealandia_terrestrial_fauna.pdf",
+      "08_zealandia_terrestrial_fauna.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "08_zealandia_terrestrial_fauna.pdf",
+        "page": 11,
+        "title": "Terrestrial fauna of Zealandia"
+      },
+      {
+        "source": "08_zealandia_terrestrial_fauna.pdf",
+        "page": 4,
+        "title": "Terrestrial fauna of Zealandia"
+      },
+      {
+        "source": "08_zealandia_terrestrial_fauna.pdf",
+        "page": 1,
+        "title": "Terrestrial fauna of Zealandia"
+      }
+    ],
+    "answer": "Molecular studies indicate that New Zealand’s terrestrial fauna does not stem solely from the ancient Gondwanan breakup.  Instead, the genetic evidence shows that the biota has been repeatedly reshaped by later events such as the presence and subsequent extinction of mammals after the Miocene, and that many extant lineages likely originated from more recent colonisations rather than from a single, ancient, monophyletic group tied to Zealandia’s separation from Gondwanaland [1][2][3].",
+    "source_hit": true
+  },
+  {
+    "id": 9,
+    "question": "What mechanisms can connect continental fragmentation with increased marine biodiversity?",
+    "expected_sources": [
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_sources": [
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 1,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      }
+    ],
+    "answer": "Continental fragmentation can increase marine biodiversity through several mechanisms that are discussed in the retrieved papers:\n\n1. **Geographic isolation and vicariance** – The breakup of supercontinents creates inter‑continental barriers that separate previously mixed faunas, leading to vicariant speciation and a rise in taxonomic richness. This is described as a primary causal link between tectonics and biodiversity [1].\n\n2. **Enhanced nutrient flux** – Rifting and continental denudation associated with fragmentation can raise nutrient input into the oceans, boosting productivity and supporting more diverse marine communities. This pathway is highlighted as a tectonically driven biotic driver [2].\n\n3. **Changes in ocean–atmospheric circulation and sea level** – Shifts in continental arrangement affect ocean circulation patterns (e.g., carbon cycling, global climate) and sea‑level regimes, which in turn influence habitat availability and connectivity for marine organisms. These environmental effects are cited as potential mechanisms linking tectonics to biodiversity [1, 2].\n\nThese mechanisms collectively explain how continental fragmentation can promote increased marine biodiversity.",
+    "source_hit": true
+  },
+  {
+    "id": 10,
+    "question": "How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?",
+    "expected_sources": [
+      "02_global_biogeography_pangaea.pdf"
+    ],
+    "retrieved_sources": [
+      "02_global_biogeography_pangaea.pdf",
+      "01_plate_tectonic_marine_diversity.pdf",
+      "01_plate_tectonic_marine_diversity.pdf"
+    ],
+    "retrieved_pages": [
+      {
+        "source": "02_global_biogeography_pangaea.pdf",
+        "page": 1,
+        "title": "Global biogeography of terrestrial vertebrates after Pangaea"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 1,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      },
+      {
+        "source": "01_plate_tectonic_marine_diversity.pdf",
+        "page": 4,
+        "title": "Plate tectonic regulation of global marine animal diversity"
+      }
+    ],
+    "answer": "Continental fragmentation splits the geographic ranges of thousands of species at once.  The resulting isolation (vicariance) separates ancestral faunas, after which each side of the break‑up undergoes its own radiation and eventually produces distinct lineages that were once part of a single, wide‑ranging taxon.  In short, continental drift creates geographic barriers that both distribute organisms into separate regions and drive their diversification through isolated speciation events. [1]",
+    "source_hit": true
+  }
+]

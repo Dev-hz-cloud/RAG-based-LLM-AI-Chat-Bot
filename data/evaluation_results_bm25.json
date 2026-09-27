@@ -1,0 +1,322 @@
+{
+  "retrieval_strategy": "BM25 Keyword Retrieval",
+  "top_k": 3,
+  "results": [
+    {
+      "id": 1,
+      "question": "What evidence links continental fragmentation to global marine biodiversity?",
+      "expected_sources": [
+        "01_plate_tectonic_marine_diversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 6,
+          "score": 18.27489
+        },
+        {
+          "rank": 2,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 18.022646
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 4,
+          "score": 15.902944
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 2,
+      "question": "How did the breakup of Pangaea contribute to vicariance-driven speciation?",
+      "expected_sources": [
+        "02_global_biogeography_pangaea.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "02_global_biogeography_pangaea.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 18.73881
+        },
+        {
+          "rank": 2,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 2,
+          "chunk": 4,
+          "score": 17.764342
+        },
+        {
+          "rank": 3,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 9,
+          "chunk": 1,
+          "score": 16.590964
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 3,
+      "question": "How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?",
+      "expected_sources": [
+        "03_pangaea_terrestrial_biodiversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 28.893157
+        },
+        {
+          "rank": 2,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 5,
+          "score": 27.618074
+        },
+        {
+          "rank": 3,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 22.90393
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 4,
+      "question": "How does the supercontinent cycle influence Earth's long-term climate?",
+      "expected_sources": [
+        "04_supercontinent_cycle_climate.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 22.534162
+        },
+        {
+          "rank": 2,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 11,
+          "chunk": 4,
+          "score": 20.671977
+        },
+        {
+          "rank": 3,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 20.546536
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 5,
+      "question": "What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?",
+      "expected_sources": [
+        "05_cambrian_geography_climate.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 19.017864
+        },
+        {
+          "rank": 2,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 7,
+          "chunk": 4,
+          "score": 18.668306
+        },
+        {
+          "rank": 3,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 8,
+          "chunk": 3,
+          "score": 16.23337
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 6,
+      "question": "How do landscape dynamics influence biodiversity during the Phanerozoic?",
+      "expected_sources": [
+        "06_phanerozoic_landscape_biosphere.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "06_phanerozoic_landscape_biosphere.pdf",
+          "page": 1,
+          "chunk": 5,
+          "score": 14.286868
+        },
+        {
+          "rank": 2,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 8,
+          "chunk": 2,
+          "score": 14.265405
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 5,
+          "chunk": 13,
+          "score": 13.634409
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 7,
+      "question": "Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?",
+      "expected_sources": [
+        "07_tropical_forest_biodiversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 7,
+          "chunk": 7,
+          "score": 35.087718
+        },
+        {
+          "rank": 2,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 6,
+          "chunk": 2,
+          "score": 30.685014
+        },
+        {
+          "rank": 3,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 1,
+          "chunk": 5,
+          "score": 30.522798
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 8,
+      "question": "What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?",
+      "expected_sources": [
+        "08_zealandia_terrestrial_fauna.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 4,
+          "chunk": 2,
+          "score": 26.01523
+        },
+        {
+          "rank": 2,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 22.103883
+        },
+        {
+          "rank": 3,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 21.636707
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 9,
+      "question": "What mechanisms can connect continental fragmentation with increased marine biodiversity?",
+      "expected_sources": [
+        "01_plate_tectonic_marine_diversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 14.8793
+        },
+        {
+          "rank": 2,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 6,
+          "score": 14.303815
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 4,
+          "score": 14.246258
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 10,
+      "question": "How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?",
+      "expected_sources": [
+        "02_global_biogeography_pangaea.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 19.769677
+        },
+        {
+          "rank": 2,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 9,
+          "score": 19.478976
+        },
+        {
+          "rank": 3,
+          "source": "06_phanerozoic_landscape_biosphere.pdf",
+          "page": 4,
+          "chunk": 4,
+          "score": 19.194736
+        }
+      ],
+      "hit_at_3": false
+    }
+  ],
+  "summary": {
+    "total_questions": 10,
+    "hits_at_3": 9,
+    "misses_at_3": 1,
+    "hit_at_3": 0.9
+  }
+}

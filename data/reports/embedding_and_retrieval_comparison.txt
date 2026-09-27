@@ -1,0 +1,68 @@
+EMBEDDING AND RETRIEVAL COMPARISON
+Analytics Vidhya Pinnacle Plus Capstone
+============================================================
+
+1. EXPERIMENTAL SUMMARY
+------------------------------------------------------------
+Evaluation set: 10 questions
+Metric: source-level Hit@3
+
+Configuration                    Model                         Hit@3
+---------------------------------------------------------------------------
+BGE-small dense                  BAAI/bge-small-en-v1.5       9/10  (90.0%)
+MiniLM dense                     sentence-transformers/all-MiniLM-L6-v2 9/10  (90.0%)
+BM25 keyword                     N/A                           9/10  (90.0%)
+BGE-small + BM25 + RRF           BAAI/bge-small-en-v1.5       10/10 (100.0%)
+MiniLM + BM25 + RRF              sentence-transformers/all-MiniLM-L6-v2 9/10  (90.0%)
+
+2. EMBEDDING MODEL OBSERVATION
+------------------------------------------------------------
+BGE-small and MiniLM both achieved 90.0% Hit@3 as standalone dense
+retrievers on the 10-question evaluation set.
+
+Therefore, this experiment does not justify claiming that one embedding
+model is universally better than the other based only on this metric.
+
+3. RETRIEVAL STRATEGY OBSERVATION
+------------------------------------------------------------
+BM25 achieved 90.0% Hit@3.
+
+Combining BGE-small dense retrieval with BM25 using Reciprocal Rank
+Fusion (RRF) achieved 100.0% Hit@3.
+
+Combining MiniLM with BM25 using RRF achieved 90.0% Hit@3.
+
+Thus, on this test set, the BGE-small + BM25 + RRF configuration gave the
+highest observed source-level Hit@3.
+
+4. FINAL RETRIEVAL CHOICE
+------------------------------------------------------------
+Selected configuration:
+  BAAI/bge-small-en-v1.5 + BM25 + Reciprocal Rank Fusion (RRF)
+
+Reason:
+  It retrieved an expected source in the top three for all 10 evaluation
+  questions in the current test set.
+
+This choice is based on the observed experiment and should not be
+presented as a universal benchmark result.
+
+5. IMPORTANT LIMITATION
+------------------------------------------------------------
+Hit@3 checks whether the expected paper appears in the top three.
+It does not prove that the retrieved passage is the best passage or
+that an LLM will generate a correct, grounded answer.
+
+The RAG stage should therefore evaluate:
+  - answer correctness
+  - grounding in retrieved context
+  - citation accuracy
+  - paper title/page attribution
+  - failure cases where context is insufficient
+
+6. ACTUAL JSON FILES
+------------------------------------------------------------
+evaluation_results_minilm.json
+evaluation_results_hybrid_minilm.json
+
+END OF REPORT

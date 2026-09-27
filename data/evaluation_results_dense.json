@@ -1,0 +1,323 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "retrieval_strategy": "Dense Retrieval (Cosine Similarity)",
+  "top_k": 3,
+  "results": [
+    {
+      "id": 1,
+      "question": "What evidence links continental fragmentation to global marine biodiversity?",
+      "expected_sources": [
+        "01_plate_tectonic_marine_diversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 3,
+          "chunk": 4,
+          "distance": 0.124922
+        },
+        {
+          "rank": 2,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 2,
+          "distance": 0.129876
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 1,
+          "chunk": 2,
+          "distance": 0.143558
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 2,
+      "question": "How did the breakup of Pangaea contribute to vicariance-driven speciation?",
+      "expected_sources": [
+        "02_global_biogeography_pangaea.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "02_global_biogeography_pangaea.pdf",
+          "page": 1,
+          "chunk": 2,
+          "distance": 0.1669
+        },
+        {
+          "rank": 2,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 6,
+          "chunk": 8,
+          "distance": 0.176158
+        },
+        {
+          "rank": 3,
+          "source": "02_global_biogeography_pangaea.pdf",
+          "page": 2,
+          "chunk": 1,
+          "distance": 0.1782
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 3,
+      "question": "How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?",
+      "expected_sources": [
+        "03_pangaea_terrestrial_biodiversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 2,
+          "distance": 0.110867
+        },
+        {
+          "rank": 2,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 5,
+          "distance": 0.139056
+        },
+        {
+          "rank": 3,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 1,
+          "distance": 0.149987
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 4,
+      "question": "How does the supercontinent cycle influence Earth's long-term climate?",
+      "expected_sources": [
+        "04_supercontinent_cycle_climate.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 1,
+          "chunk": 1,
+          "distance": 0.088098
+        },
+        {
+          "rank": 2,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 11,
+          "chunk": 3,
+          "distance": 0.088492
+        },
+        {
+          "rank": 3,
+          "source": "04_supercontinent_cycle_climate.pdf",
+          "page": 1,
+          "chunk": 3,
+          "distance": 0.140131
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 5,
+      "question": "What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?",
+      "expected_sources": [
+        "05_cambrian_geography_climate.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 1,
+          "chunk": 1,
+          "distance": 0.089748
+        },
+        {
+          "rank": 2,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 8,
+          "chunk": 3,
+          "distance": 0.095777
+        },
+        {
+          "rank": 3,
+          "source": "05_cambrian_geography_climate.pdf",
+          "page": 8,
+          "chunk": 1,
+          "distance": 0.097875
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 6,
+      "question": "How do landscape dynamics influence biodiversity during the Phanerozoic?",
+      "expected_sources": [
+        "06_phanerozoic_landscape_biosphere.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "06_phanerozoic_landscape_biosphere.pdf",
+          "page": 1,
+          "chunk": 1,
+          "distance": 0.135447
+        },
+        {
+          "rank": 2,
+          "source": "06_phanerozoic_landscape_biosphere.pdf",
+          "page": 1,
+          "chunk": 2,
+          "distance": 0.13747
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 8,
+          "distance": 0.138093
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 7,
+      "question": "Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?",
+      "expected_sources": [
+        "07_tropical_forest_biodiversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 1,
+          "chunk": 6,
+          "distance": 0.12119
+        },
+        {
+          "rank": 2,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 1,
+          "chunk": 5,
+          "distance": 0.128129
+        },
+        {
+          "rank": 3,
+          "source": "07_tropical_forest_biodiversity.pdf",
+          "page": 5,
+          "chunk": 3,
+          "distance": 0.131228
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 8,
+      "question": "What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?",
+      "expected_sources": [
+        "08_zealandia_terrestrial_fauna.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 1,
+          "chunk": 1,
+          "distance": 0.104414
+        },
+        {
+          "rank": 2,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 11,
+          "chunk": 1,
+          "distance": 0.141583
+        },
+        {
+          "rank": 3,
+          "source": "08_zealandia_terrestrial_fauna.pdf",
+          "page": 4,
+          "chunk": 1,
+          "distance": 0.143672
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 9,
+      "question": "What mechanisms can connect continental fragmentation with increased marine biodiversity?",
+      "expected_sources": [
+        "01_plate_tectonic_marine_diversity.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 3,
+          "chunk": 4,
+          "distance": 0.155306
+        },
+        {
+          "rank": 2,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 5,
+          "distance": 0.15884
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 4,
+          "chunk": 4,
+          "distance": 0.159066
+        }
+      ],
+      "hit_at_3": true
+    },
+    {
+      "id": 10,
+      "question": "How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?",
+      "expected_sources": [
+        "02_global_biogeography_pangaea.pdf"
+      ],
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 1,
+          "chunk": 3,
+          "distance": 0.155866
+        },
+        {
+          "rank": 2,
+          "source": "03_pangaea_terrestrial_biodiversity.pdf",
+          "page": 4,
+          "chunk": 1,
+          "distance": 0.16433
+        },
+        {
+          "rank": 3,
+          "source": "01_plate_tectonic_marine_diversity.pdf",
+          "page": 1,
+          "chunk": 2,
+          "distance": 0.169399
+        }
+      ],
+      "hit_at_3": false
+    }
+  ],
+  "summary": {
+    "total_questions": 10,
+    "hits_at_3": 9,
+    "misses_at_3": 1,
+    "hit_at_3": 0.9
+  }
+}

@@ -1,0 +1,316 @@
+RETRIEVAL EVALUATION REPORT
+Analytics Vidhya Pinnacle Plus Capstone
+============================================================
+
+1. PURPOSE
+------------------------------------------------------------
+This report compares the retrieval configurations implemented for
+the RAG capstone using 10 evaluation questions.
+
+Metric:
+  Hit@3 = an expected source document appears in the top 3 retrieved
+  results for the question.
+
+Important limitation:
+  This is a source-level retrieval metric. It does not by itself
+  measure passage relevance, answer quality, groundedness, citation
+  correctness, or whether the best passage was ranked first.
+
+2. EVALUATION SET
+------------------------------------------------------------
+Total questions: 10
+
+Questions cover all 8 source papers, including:
+  - plate tectonics and marine biodiversity
+  - Pangaea and vicariance/speciation
+  - terrestrial biodiversity during Pangaea fragmentation
+  - supercontinent cycle and climate
+  - early Cambrian palaeogeography and climate
+  - Phanerozoic landscape dynamics and biodiversity
+  - tropical forest biodiversity
+  - origins of New Zealand terrestrial fauna
+
+3. AGGREGATE RESULTS
+------------------------------------------------------------
+Configuration                    Hit@3
+------------------------------------------------------------
+BGE-small dense                  9/10  (90.0%)
+MiniLM dense                     9/10  (90.0%)
+BM25 keyword                     9/10  (90.0%)
+BGE-small + BM25 + RRF           10/10 (100.0%)
+MiniLM + BM25 + RRF              9/10  (90.0%)
+
+The MiniLM values above are taken directly from the uploaded evaluation
+JSON results. The BGE-small, BM25, and BGE-small hybrid values are from
+their corresponding evaluation runs.
+
+4. FIVE-WAY COMPARISON
+------------------------------------------------------------
+The two embedding models both achieved 90.0% Hit@3 as standalone dense
+retrievers on this 10-question set.
+
+BM25 also achieved 90.0%, showing that lexical retrieval alone can
+recover the expected source for most questions.
+
+The BGE-small + BM25 RRF hybrid achieved 100.0% Hit@3 (10/10), while
+the MiniLM + BM25 RRF hybrid achieved 90.0% (9/10).
+
+Therefore, for this evaluation set, BGE-small + BM25 + RRF is selected
+as the final retrieval configuration. This is a dataset-specific
+experimental result, not a claim that BGE-small is universally better
+than MiniLM.
+
+5. QUESTION-BY-QUESTION HIT@3 COMPARISON
+------------------------------------------------------------
+Q   BGE  BM25  BGE+BM25  MiniLM  MiniLM+BM25
+------------------------------------------------------------
+1   YES  YES   YES       YES     YES
+2   YES  YES   YES       YES     YES
+3   YES  YES   YES       YES     YES
+4   YES  YES   YES       YES     YES
+5   YES  YES   YES       YES     YES
+6   YES  YES   YES       YES     YES
+7   YES  YES   YES       YES     YES
+8   YES  YES   YES       YES     YES
+9   YES  YES   YES       YES     YES
+10  NO   NO    YES       NO      NO
+
+6. MINI-LM DENSE: ACTUAL JSON RESULTS
+------------------------------------------------------------
+Model: sentence-transformers/all-MiniLM-L6-v2
+Database: data/chroma_minilm
+Hits@3: 9/10
+Hit@3: 90.0%
+
+Question-by-question details:
+
+Q1. What evidence links continental fragmentation to global marine biodiversity?
+Expected source: 01_plate_tectonic_marine_diversity.pdf
+Hit@3: YES
+Top 3:
+    1. 01_plate_tectonic_marine_diversity.pdf | page 3 | chunk 4 | distance 0.239002
+    2. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2 | distance 0.260153
+    3. 01_plate_tectonic_marine_diversity.pdf | page 1 | chunk 3 | distance 0.272282
+
+Q2. How did the breakup of Pangaea contribute to vicariance-driven speciation?
+Expected source: 02_global_biogeography_pangaea.pdf
+Hit@3: YES
+Top 3:
+    1. 02_global_biogeography_pangaea.pdf | page 1 | chunk 2 | distance 0.265066
+    2. 02_global_biogeography_pangaea.pdf | page 2 | chunk 1 | distance 0.297888
+    3. 02_global_biogeography_pangaea.pdf | page 1 | chunk 1 | distance 0.304667
+
+Q3. How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?
+Expected source: 03_pangaea_terrestrial_biodiversity.pdf
+Hit@3: YES
+Top 3:
+    1. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 3 | distance 0.228601
+    2. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 1 | distance 0.229318
+    3. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 5 | distance 0.239657
+
+Q4. How does the supercontinent cycle influence Earth's long-term climate?
+Expected source: 04_supercontinent_cycle_climate.pdf
+Hit@3: YES
+Top 3:
+    1. 04_supercontinent_cycle_climate.pdf | page 11 | chunk 3 | distance 0.179038
+    2. 04_supercontinent_cycle_climate.pdf | page 11 | chunk 4 | distance 0.197684
+    3. 04_supercontinent_cycle_climate.pdf | page 1 | chunk 1 | distance 0.200770
+
+Q5. What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?
+Expected source: 05_cambrian_geography_climate.pdf
+Hit@3: YES
+Top 3:
+    1. 05_cambrian_geography_climate.pdf | page 7 | chunk 4 | distance 0.169249
+    2. 05_cambrian_geography_climate.pdf | page 2 | chunk 4 | distance 0.186266
+    3. 05_cambrian_geography_climate.pdf | page 8 | chunk 3 | distance 0.202216
+
+Q6. How do landscape dynamics influence biodiversity during the Phanerozoic?
+Expected source: 06_phanerozoic_landscape_biosphere.pdf
+Hit@3: YES
+Top 3:
+    1. 06_phanerozoic_landscape_biosphere.pdf | page 1 | chunk 2 | distance 0.282661
+    2. 06_phanerozoic_landscape_biosphere.pdf | page 1 | chunk 1 | distance 0.291125
+    3. 06_phanerozoic_landscape_biosphere.pdf | page 11 | chunk 13 | distance 0.323288
+
+Q7. Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?
+Expected source: 07_tropical_forest_biodiversity.pdf
+Hit@3: YES
+Top 3:
+    1. 07_tropical_forest_biodiversity.pdf | page 1 | chunk 8 | distance 0.191310
+    2. 07_tropical_forest_biodiversity.pdf | page 1 | chunk 5 | distance 0.238098
+    3. 07_tropical_forest_biodiversity.pdf | page 7 | chunk 7 | distance 0.254001
+
+Q8. What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?
+Expected source: 08_zealandia_terrestrial_fauna.pdf
+Hit@3: YES
+Top 3:
+    1. 08_zealandia_terrestrial_fauna.pdf | page 1 | chunk 1 | distance 0.118041
+    2. 08_zealandia_terrestrial_fauna.pdf | page 4 | chunk 2 | distance 0.162301
+    3. 08_zealandia_terrestrial_fauna.pdf | page 11 | chunk 1 | distance 0.192654
+
+Q9. What mechanisms can connect continental fragmentation with increased marine biodiversity?
+Expected source: 01_plate_tectonic_marine_diversity.pdf
+Hit@3: YES
+Top 3:
+    1. 01_plate_tectonic_marine_diversity.pdf | page 3 | chunk 4 | distance 0.240606
+    2. 01_plate_tectonic_marine_diversity.pdf | page 1 | chunk 3 | distance 0.257784
+    3. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2 | distance 0.282154
+
+Q10. How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?
+Expected source: 02_global_biogeography_pangaea.pdf
+Hit@3: NO
+Top 3:
+    1. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 3 | distance 0.270486
+    2. 01_plate_tectonic_marine_diversity.pdf | page 3 | chunk 4 | distance 0.297799
+    3. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2 | distance 0.312187
+
+7. MINI-LM + BM25 + RRF: ACTUAL JSON RESULTS
+------------------------------------------------------------
+Retrieval method: MiniLM + BM25 + RRF
+Embedding model: sentence-transformers/all-MiniLM-L6-v2
+Total questions: 10
+Hits@3: 9/10
+Hit@3: 90.0%
+
+Question-by-question details:
+
+Q1. What evidence links continental fragmentation to global marine biodiversity?
+Expected source: 01_plate_tectonic_marine_diversity.pdf
+Hit@3: YES
+Top 3:
+    1. 01_plate_tectonic_marine_diversity.pdf | page 1 | chunk 3 | RRF 0.031498
+    2. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2 | RRF 0.031281
+    3. 01_plate_tectonic_marine_diversity.pdf | page 3 | chunk 4 | RRF 0.030886
+
+Q2. How did the breakup of Pangaea contribute to vicariance-driven speciation?
+Expected source: 02_global_biogeography_pangaea.pdf
+Hit@3: YES
+Top 3:
+    1. 02_global_biogeography_pangaea.pdf | page 1 | chunk 2 | RRF 0.032787
+    2. 02_global_biogeography_pangaea.pdf | page 2 | chunk 1 | RRF 0.031054
+    3. 07_tropical_forest_biodiversity.pdf | page 2 | chunk 4 | RRF 0.016129
+
+Q3. How did terrestrial vertebrate biodiversity change as Pangaea fragmented during the Mesozoic?
+Expected source: 03_pangaea_terrestrial_biodiversity.pdf
+Hit@3: YES
+Top 3:
+    1. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 2 | RRF 0.032018
+    2. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 1 | RRF 0.032002
+    3. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 5 | RRF 0.032002
+
+Q4. How does the supercontinent cycle influence Earth's long-term climate?
+Expected source: 04_supercontinent_cycle_climate.pdf
+Hit@3: YES
+Top 3:
+    1. 04_supercontinent_cycle_climate.pdf | page 11 | chunk 4 | RRF 0.032258
+    2. 04_supercontinent_cycle_climate.pdf | page 11 | chunk 3 | RRF 0.032018
+    3. 04_supercontinent_cycle_climate.pdf | page 1 | chunk 3 | RRF 0.031778
+
+Q5. What palaeogeographic configuration best reconciles geological data and simulated early Cambrian climate?
+Expected source: 05_cambrian_geography_climate.pdf
+Hit@3: YES
+Top 3:
+    1. 05_cambrian_geography_climate.pdf | page 7 | chunk 4 | RRF 0.032522
+    2. 05_cambrian_geography_climate.pdf | page 8 | chunk 3 | RRF 0.031746
+    3. 05_cambrian_geography_climate.pdf | page 1 | chunk 2 | RRF 0.030886
+
+Q6. How do landscape dynamics influence biodiversity during the Phanerozoic?
+Expected source: 06_phanerozoic_landscape_biosphere.pdf
+Hit@3: YES
+Top 3:
+    1. 06_phanerozoic_landscape_biosphere.pdf | page 1 | chunk 2 | RRF 0.032018
+    2. 06_phanerozoic_landscape_biosphere.pdf | page 1 | chunk 1 | RRF 0.030622
+    3. 06_phanerozoic_landscape_biosphere.pdf | page 1 | chunk 5 | RRF 0.016393
+
+Q7. Why do tropical moist forests show different biodiversity patterns between the Neotropics, Afrotropics, and Indomalaya?
+Expected source: 07_tropical_forest_biodiversity.pdf
+Hit@3: YES
+Top 3:
+    1. 07_tropical_forest_biodiversity.pdf | page 7 | chunk 7 | RRF 0.032266
+    2. 07_tropical_forest_biodiversity.pdf | page 1 | chunk 5 | RRF 0.032002
+    3. 07_tropical_forest_biodiversity.pdf | page 1 | chunk 8 | RRF 0.031319
+
+Q8. What does molecular evidence suggest about the origins of New Zealand's terrestrial fauna?
+Expected source: 08_zealandia_terrestrial_fauna.pdf
+Hit@3: YES
+Top 3:
+    1. 08_zealandia_terrestrial_fauna.pdf | page 4 | chunk 2 | RRF 0.032522
+    2. 08_zealandia_terrestrial_fauna.pdf | page 1 | chunk 1 | RRF 0.032266
+    3. 08_zealandia_terrestrial_fauna.pdf | page 4 | chunk 1 | RRF 0.031514
+
+Q9. What mechanisms can connect continental fragmentation with increased marine biodiversity?
+Expected source: 01_plate_tectonic_marine_diversity.pdf
+Hit@3: YES
+Top 3:
+    1. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2 | RRF 0.031498
+    2. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 4 | RRF 0.031258
+    3. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 5 | RRF 0.030077
+
+Q10. How does continental fragmentation affect the geographic distribution and diversification of terrestrial organisms?
+Expected source: 02_global_biogeography_pangaea.pdf
+Hit@3: NO
+Top 3:
+    1. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 5 | RRF 0.030090
+    2. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 4 | RRF 0.029418
+    3. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 3 | RRF 0.016393
+
+8. FAILURE CASES / OBSERVATIONS
+------------------------------------------------------------
+Q10 is the main recurring retrieval failure.
+
+Question:
+  How does continental fragmentation affect the geographic distribution
+  and diversification of terrestrial organisms?
+
+Expected source:
+  02_global_biogeography_pangaea.pdf
+
+MiniLM dense Q10:
+  1. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 3
+  2. 01_plate_tectonic_marine_diversity.pdf | page 3 | chunk 4
+  3. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 2
+  Result: MISS
+
+MiniLM + BM25 + RRF Q10:
+  1. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 5
+  2. 01_plate_tectonic_marine_diversity.pdf | page 4 | chunk 4
+  3. 03_pangaea_terrestrial_biodiversity.pdf | page 1 | chunk 3
+  Result: MISS
+
+The BGE-small + BM25 + RRF run did retrieve the expected Q10 source
+within its top three, so the hybrid strategy improved Q10 for BGE-small
+but not for MiniLM.
+
+This is a useful failure case for the capstone because it shows that
+source-level retrieval can remain sensitive to the embedding model and
+ranking behavior.
+
+9. CAPSTONE INTERPRETATION
+------------------------------------------------------------
+On this 10-question evaluation set:
+
+  - BGE-small dense: 90.0%
+  - MiniLM dense: 90.0%
+  - BM25: 90.0%
+  - BGE-small + BM25 + RRF: 100.0%
+  - MiniLM + BM25 + RRF: 90.0%
+
+The selected final retriever is BGE-small + BM25 + RRF because it achieved
+10/10 expected-source retrieval on this test set.
+
+The result should be reported as an observed experimental outcome rather
+than a universal model ranking.
+
+The next stage is the complete RAG pipeline. It must evaluate whether
+the retrieved passages actually support the generated answer and whether
+paper title/page citations are correct.
+
+10. FILES USED / RELATED OUTPUTS
+------------------------------------------------------------
+evaluation_results_dense.json
+evaluation_results_bm25.json
+evaluation_results_hybrid.json
+evaluation_results_minilm.json
+evaluation_results_hybrid_minilm.json
+
+END OF REPORT
